@@ -1,0 +1,28 @@
+/* 로봇팔 스튜디오 전용: 공통 style.css 위에 덮어쓴다. 강조색은 SO-101 의 노란색. */
+:root {
+  --accent: #f5b301;
+  --accent-2: #ffcf4d;
+  --accent-soft: rgba(245, 179, 1, .16);
+  --thigh: #5b9bff;
+  --shank: #ff9f43;
+  --hipx: #a78bfa;
+}
+.btn.primary { color: #141414; }
+.btn.primary kbd { background: rgba(0, 0, 0, .12); border-color: rgba(0, 0, 0, .15); }
+.seg button.active { color: #141414; }
+.motors { grid-template-columns: repeat(6, 34px); }
+.motors .foot b { font-size: 10px; }
+.held { font-weight: 600; color: var(--muted); }
+.held.on { color: var(--ok); }
+.objects { display: grid; gap: 6px; margin: 4px 0 10px; }
+.obj-row { display: flex; align-items: center; gap: 10px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); }
+.obj-row .swatch { width: 14px; height: 14px; border-radius: 3px; }
+.obj-row .pos { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 12px; margin-left: auto; }
+.obj-row .btn { height: 26px; }
+#tip-view, #grip-view { height: 230px; cursor: crosshair; touch-action: none; }
+#side-view, #top-view { height: 210px; }
+input[type=range].pan::-webkit-slider-thumb { border-color: #34d399; }
+input[type=range].roll::-webkit-slider-thumb { border-color: #f472b6; }
+input[type=range].grip::-webkit-slider-thumb { border-color: var(--accent); }
+.slider-name, .slider-val .muted { white-space: nowrap; }
+.slider-top { flex-wrap: wrap; row-gap: 2px; }

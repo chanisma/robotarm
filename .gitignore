@@ -1,0 +1,21 @@
+# 외부 저장소 (scripts/setup.ps1 로 받음)
+third_party/*
+!third_party/README.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 비밀 정보
+.env
+
+# OS / 에디터 / 시험 산출물
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+.playwright-mcp/
+
+# MuJoCo 실행 로그
+MUJOCO_LOG.TXT
